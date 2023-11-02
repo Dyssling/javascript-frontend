@@ -1,0 +1,39 @@
+.login-button{
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    margin-right: 9px;
+
+    text-decoration: none;
+    color: black;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F9D783;
+
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+
+    i{
+        margin-left: 13px;
+    }
+    
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+.learn-more{
+    background-color: transparent;
+
+    border: 1px solid black;
+
+    &:hover{
+        color: white;
+
+        background-color: black;
+    }
+}

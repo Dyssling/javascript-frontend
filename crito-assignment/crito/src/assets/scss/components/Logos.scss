@@ -1,0 +1,22 @@
+//Logo sektion
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    margin: 72px 0;
+
+    .logo-container{
+        width: 100%;
+        max-width: 1320px;
+
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(224px, 1fr));
+
+        img{
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,182 @@
+footer{
+    background-color: #0E1021;
+
+    p, a{
+        color: rgb(189, 189, 189); //Passar på att styla dessa redan här för att slippa göra om det hela tiden
+    }
+
+    //Övre delen av footern
+    .footer-nav-section{
+        position: relative;
+        .footer-element{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            pointer-events: none; //Ännu en gång använder jag denna raden kod för att undvika att länkarna bakom bilden inte blir klickbara
+        }
+        .footer-nav{
+            max-width: 1380px;
+            padding: 100px 40px;
+    
+            margin: auto;
+    
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
+    
+            @media (max-width: 1200px){
+                grid-template-columns: 1fr;
+    
+                padding: 60px 20px;
+            }
+    
+            .footer-about{
+                margin-right: 25px;
+    
+                p{
+                    margin-bottom: 0;
+                }
+    
+                @media (max-width: 1200px){
+                    margin: auto;
+                    margin-bottom: 20px;
+    
+                    width: 500px;
+    
+                    img{
+                        display: block;
+                        margin: auto;
+                        margin-bottom: 22px;
+                    }
+    
+                    p{
+                        text-align: center;
+                    }
+                }
+    
+                @media (max-width: 768px){
+                    max-width: 500px;
+                    width: 80%;
+                }
+            }
+    
+            //Navigering som även blir till grid i mobil-varianten
+            nav{
+                display: flex;
+                justify-content: space-around;
+    
+                margin-left: 15px;
+
+
+
+    
+                @media (max-width: 768px){
+                    margin: 0;
+    
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+                    justify-content: space-around;
+                    gap: 20px;
+                }
+    
+                div{
+                    @media (max-width: 768px){
+                        text-align: center;
+
+                    }
+                    
+                    h4{
+                        color: white;
+    
+                        margin-bottom: 30px;
+                    }
+                    a{
+                        display: block;
+    
+                        text-decoration: underline 1px solid transparent;
+    
+                        margin: 15px 0;
+
+                        transition: text-decoration 0.15s ease-in-out;
+    
+                        &:hover{
+                            text-decoration: underline 1px solid rgb(189,189,189);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Nedre delen av footern
+    .footer-bottom{
+        border-top: 1px solid #ffffff2c;
+        
+        .footer-bottom-container{
+            max-width: 1380px;
+            padding: 10px 40px;
+    
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 768px){
+                display: block;
+            }
+
+            //Knappar till sociala medier
+            .social{
+                @media (max-width: 768px){
+                    display: none;
+                }
+
+                .social-icons{
+                    display: inline-block;
+                    margin: 0 15px;
+                    a{
+                        text-decoration: none;
+    
+                        color: white;
+                        i{
+                            font-size: 16px;
+    
+                            transition: color 0.1s ease-in-out;
+        
+                            &:hover{
+                                color: #ffffff7a;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Knapparna igen, dessa syns bara på mobil-varianten
+            .mobile{
+                display: none;
+
+                @media (max-width: 768px){
+                    display: flex;
+                    justify-content: space-around;
+
+                    width: 200px;
+
+                    margin: auto;
+                    margin-top: 15px;
+                }
+
+                .social-icons{
+                    margin: 0;
+                }
+            }
+
+            p{
+                @media (max-width: 768px){
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

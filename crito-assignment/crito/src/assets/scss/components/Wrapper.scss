@@ -1,0 +1,6 @@
+.wrapper{
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: 100%; //Stötte på ett väldigt märkligt problem när jag bara använde "grid-template-rows" utan att specificera bredden på kolumnen. Olika grids på sidan som hade "auto-fit" funkade inte korrekt. Felsökte i MÅNGA timmar. Lade till denna raden kod, och det funkade. Fuck my life
+    grid-template-rows: auto 1fr auto;
+}

@@ -1,0 +1,28 @@
+.login-button {
+  padding: 13px 30px;
+  border-radius: 30px;
+  margin-right: 9px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9D783;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.login-button i {
+  margin-left: 13px;
+}
+.login-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.learn-more {
+  background-color: transparent;
+  border: 1px solid black;
+}
+.learn-more:hover {
+  color: white;
+  background-color: black;
+}
