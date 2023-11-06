@@ -1,0 +1,45 @@
+//Team sektion
+.team-section{
+    background-color: #F0D082;
+
+    .team-section-container{
+        max-width: 1380px;
+        padding: 60px 40px;
+
+        margin: auto;
+
+        .team-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            margin-bottom: 60px;
+
+            @media (max-width: 768px){
+                display: block;
+            }
+
+            .team-header-container{
+                h2{
+                    margin-bottom: 0;
+                }
+            }
+
+            .team-button{
+                margin-left: 25px;
+
+                @media (max-width: 768px){
+                    margin: auto;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        //Grid sektion för team
+        .team-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 308px);
+            justify-content: space-around;
+        }
+    }
+}

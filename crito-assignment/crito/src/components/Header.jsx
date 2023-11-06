@@ -49,7 +49,7 @@ const Header = () => {
                         <NavLink to="/news">News</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                     </nav>
-                    <Button type="yellow" text="Login" url="#"/>
+                    <Button className="nav-button" type="yellow" text="Login" url="#"/>
                 </div>
                 {/* <!-- Mobil meny knapp --> */}
                 <button className="menu">

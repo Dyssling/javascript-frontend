@@ -1,19 +1,24 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import '../assets/scss/components/Button.css'
 
-const Button = ({type, text, url}) => {
-  let typeClass = ""; //NOTE TO SELF: Tror inte att man ska köra sånhär kod på detta viset i en function component, eftersom det skapar sideffekter. kolla upp det mer sen
+const Button = ({type, text, url, className}) => {
+  const [typeClass, setTypeClass] = useState("login-button"); //Vet inte om det är nödvändigt att använda useState och useEffect för att sätta klassen på knappen här, jag gjorde det bara för att jag har förstått att man ska undvika att bara köra vanliga funktioner rakt upp-och-ner i en funktionell komponent. Men en liten switch hade kanske varit lugnt att köra innan renderingen?
+  useEffect(() => {
     switch(type){
-        case "yellow":
-            typeClass = "login-button";
-            break;
-        case "transparent":
-            typeClass = "login-button learn-more";
-            break;
+      case "yellow":
+          break;
+      case "transparent":
+          setTypeClass("login-button learn-more");
+          break;
+      case "black":
+        setTypeClass("login-button black");
+        break;
     }
+  }, [])
     
   return (
-    <a className={typeClass} href={url}>{text} <i className="fa-solid fa-arrow-up-right"></i></a>
+    <a className={`${typeClass}${className ? (" " + className) : ("")}`} href={url}>{text} <i className="fa-solid fa-arrow-up-right"></i></a> //Lite conditional rendering här, så att en "undefined" klass inte ska läggas till när man inte specificerar className
   )
 }
 

@@ -7,8 +7,8 @@ import NewsDetails from './views/NewsDetails.jsx';
 import Contact from './views/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import './assets/scss/components/Base.css'
-import './assets/scss/components/Wrapper.css'
+import './assets/scss/core/Base.css'
+import './assets/scss/core/Wrapper.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

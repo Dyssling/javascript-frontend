@@ -1,0 +1,96 @@
+.features-section {
+  width: 95%;
+  max-width: 1520px;
+  border: 1px solid #cacaca;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 640px 640px;
+}
+@media (max-width: 1400px) {
+  .features-section {
+    grid-template-columns: 570px 570px;
+  }
+}
+@media (max-width: 1200px) {
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+}
+.features-section .features-header .features-header-container {
+  margin-top: 70px;
+  margin-right: 90px;
+  margin-left: 90px;
+}
+@media (max-width: 1400px) {
+  .features-section .features-header .features-header-container {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .features-section .features-header .features-header-container {
+    margin: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .features-section .features-header .features-header-container {
+    margin: 15px;
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .features-section .features-header .features-header-container h6 {
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .features-section .features-header .features-header-container h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 43px;
+  }
+}
+.features-section .features-header .features-header-container .features-button {
+  width: 95%;
+}
+@media (max-width: 1200px) {
+  .features-section .features-header .features-header-container .features-button {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .features-section .features-header .features-header-container .features-button {
+    margin-bottom: 0;
+  }
+}
+.features-section .features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 85px;
+  margin-left: 30px;
+}
+@media (max-width: 1400px) {
+  .features-section .features-grid {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .features-section .features-grid {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .features-section .features-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 30px;
+  }
+}

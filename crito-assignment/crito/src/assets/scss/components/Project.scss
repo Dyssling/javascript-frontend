@@ -1,0 +1,35 @@
+.projects-grid-container{
+    margin-bottom: 25px;
+
+    img{
+        @media (max-width: 768px){
+            width: 340px;
+        }
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+    div{
+        border-top: 2px solid #ebebeb;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        a{
+            text-decoration: underline 1px transparent;
+
+            color: black;
+
+            margin: 25px;
+
+            transition: color 0.1s ease-in-out, text-decoration 0.1s ease-in-out;
+
+            &:hover{
+                color:#5a5a5a;
+
+                text-decoration: underline 1px #5a5a5a;
+            }
+        }
+    }
+}

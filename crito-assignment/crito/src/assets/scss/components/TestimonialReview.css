@@ -1,0 +1,28 @@
+.testimonial-grid-container {
+  margin: 50px;
+}
+.testimonial-grid-container i {
+  color: red;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.testimonial-grid-container p {
+  font-size: 18px;
+}
+.testimonial-grid-container .name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 25px;
+}
+.testimonial-grid-container .name div {
+  margin-left: 15px;
+}
+.testimonial-grid-container .name div h4 {
+  margin: 0;
+}
+.testimonial-grid-container .name div p {
+  margin: 0;
+  font-size: 16px;
+  color: red;
+}

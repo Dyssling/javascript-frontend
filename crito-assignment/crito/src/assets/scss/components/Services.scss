@@ -1,0 +1,63 @@
+//Services sektion
+.services-section{
+    background-color: #F0EFE9;
+
+    position:relative;
+
+    .element{
+        left: auto;
+        right: 0;
+    }
+
+    .services-container{
+        max-width: 1380px;
+        padding: 100px 40px;
+
+        margin: auto;
+
+        @media (max-width: 768px){
+            padding: 100px 20px;
+        }
+
+        h2{
+            width: 500px;
+
+            @media(max-width: 768px){
+                width: auto;
+            }
+        }
+
+        .services-button{
+            margin: 40px auto 0 auto;
+            width: 210px;
+        }
+
+        //Grid sektion för services
+        .services-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+            justify-content: space-between;
+            gap: 20px;
+
+            .startup{
+                background-color: #F9D783;
+
+                div{
+                    a{
+                        background-color: white;
+    
+                        color: black;
+
+                        border: none;
+
+                        &:hover{
+                            background-color: black;
+
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

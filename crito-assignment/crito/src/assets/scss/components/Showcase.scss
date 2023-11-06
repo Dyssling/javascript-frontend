@@ -1,21 +1,3 @@
-.element{
-    width: 650px;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    pointer-events: none; //Detta för att man ska kunna klicka på knapparna när de egentligen ligger bakom denna bilden
-
-    @media (max-width: 1400px){
-        width: 500px;
-    }
-
-    @media (max-width: 768px){
-        display:none;
-    }
-}
-
 //Showcase sektion
 .showcase-section{
     position:relative;

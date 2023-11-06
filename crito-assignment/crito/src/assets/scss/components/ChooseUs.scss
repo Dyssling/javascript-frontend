@@ -1,0 +1,80 @@
+//"Choose us" sektion
+.choose-us-section{
+    position: relative;
+
+    .box{//Den tomma lådan bakom bilden
+        height: 55%;
+        width: 53%;
+
+        z-index: 998;
+
+        position: absolute;
+        right: 0;
+        bottom: 60px;
+
+        background-color: #F0EFE9;
+
+        @media (max-width: 768px){
+            display:none;
+        }
+    }
+    .choose-us-container{
+        max-width: 1380px;
+        padding: 60px 40px;
+
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px){
+            padding: 60px 20px;
+        }
+
+        .choose-us-header{
+            h2{
+                margin-bottom: 0;
+                
+                width: 60%;
+
+                @media (max-width: 1200px){
+                    width: 90%;
+                }
+
+                @media (max-width: 992px){
+                    width: 100%;
+                }
+            }
+
+            //Grid sektion för "choose us"
+            .choose-us-grid{
+                @media (max-width: 768px){
+                    display: grid;
+                    justify-content: center;
+                    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                }
+            }
+    
+        }
+        img{
+            z-index: 999;
+
+            @media (max-width: 1400px){
+                width: 500px;
+            }
+
+            @media (max-width: 1200px){
+                width: 450px;
+            }
+
+            @media (max-width: 992px){
+                width: 350px;
+            }
+
+            @media (max-width: 768px){
+                display:none;
+            }
+        }
+    }
+}

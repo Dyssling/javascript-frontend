@@ -1,0 +1,48 @@
+.services-section {
+  background-color: #F0EFE9;
+  position: relative;
+}
+.services-section .element {
+  left: auto;
+  right: 0;
+}
+.services-section .services-container {
+  max-width: 1380px;
+  padding: 100px 40px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .services-section .services-container {
+    padding: 100px 20px;
+  }
+}
+.services-section .services-container h2 {
+  width: 500px;
+}
+@media (max-width: 768px) {
+  .services-section .services-container h2 {
+    width: auto;
+  }
+}
+.services-section .services-container .services-button {
+  margin: 40px auto 0 auto;
+  width: 210px;
+}
+.services-section .services-container .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+  justify-content: space-between;
+  gap: 20px;
+}
+.services-section .services-container .services-grid .startup {
+  background-color: #F9D783;
+}
+.services-section .services-container .services-grid .startup div a {
+  background-color: white;
+  color: black;
+  border: none;
+}
+.services-section .services-container .services-grid .startup div a:hover {
+  background-color: black;
+  color: white;
+}

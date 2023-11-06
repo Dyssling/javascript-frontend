@@ -125,7 +125,7 @@ header .header-container .header .nav {
   bottom: 0;
 }
 @media (max-width: 768px) {
-  header .header-container .header .nav .login-button {
+  header .header-container .header .nav .nav-button {
     margin: auto;
     margin-top: 18px;
   }

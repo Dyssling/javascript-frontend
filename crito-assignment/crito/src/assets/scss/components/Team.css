@@ -1,0 +1,36 @@
+.team-section {
+  background-color: #F0D082;
+}
+.team-section .team-section-container {
+  max-width: 1380px;
+  padding: 60px 40px;
+  margin: auto;
+}
+.team-section .team-section-container .team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .team-section .team-section-container .team-header {
+    display: block;
+  }
+}
+.team-section .team-section-container .team-header .team-header-container h2 {
+  margin-bottom: 0;
+}
+.team-section .team-section-container .team-header .team-button {
+  margin-left: 25px;
+}
+@media (max-width: 768px) {
+  .team-section .team-section-container .team-header .team-button {
+    margin: auto;
+    margin-top: 25px;
+  }
+}
+.team-section .team-section-container .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 308px);
+  justify-content: space-around;
+}

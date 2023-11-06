@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: white;
+
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+//Här nere är stylingen till lite olika knappar och liknande, som används flera gånger på sidan
+p{
+    line-height: 30px;
+
+    color:#4e4e4e;
+}
+
+h6{
+    color: red;
+
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    @media (max-width: 768px){
+        text-align:center;
+    }
+}
+
+h4{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 42px;
+
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 33px;
+
+    @media (max-width: 768px){
+        text-align:center;
+    }
+}
+
+.element{
+    width: 650px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    pointer-events: none; //Detta för att man ska kunna klicka på knapparna när de egentligen ligger bakom denna bilden
+
+    @media (max-width: 1400px){
+        width: 500px;
+    }
+
+    @media (max-width: 768px){
+        display:none;
+    }
+}
+
+.dot-container{
+    width: 120px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    
+    button{
+        height: 12px;
+        width: 12px;
+
+        border-radius: 50%;
+        border: none;
+
+        background-color: rgba(0, 0, 0, 0.2);
+
+        cursor: pointer;
+
+        outline: 2px solid transparent; //Var tvungen att göra en transparent outline för att övergången till hover effekten inte skulle bli konstig
+
+        transition: outline 0.05s ease-in-out;
+
+        &:hover{
+            outline: 2px solid rgba(0, 0, 0, 0.2);
+
+        }
+    }
+
+    .here{
+        background-color: black;
+
+        cursor:auto;
+
+        outline: none;
+
+        &:hover{
+            outline: none;
+        }
+    }
+}

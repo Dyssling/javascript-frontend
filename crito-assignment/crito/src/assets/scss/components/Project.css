@@ -1,0 +1,31 @@
+.projects-grid-container {
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .projects-grid-container img {
+    width: 340px;
+  }
+}
+.projects-grid-container h4 {
+  margin-bottom: 10px;
+}
+.projects-grid-container div {
+  border-top: 2px solid #ebebeb;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.projects-grid-container div a {
+  -webkit-text-decoration: underline 1px transparent;
+          text-decoration: underline 1px transparent;
+  color: black;
+  margin: 25px;
+  transition: color 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, text-decoration 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out, text-decoration 0.1s ease-in-out, -webkit-text-decoration 0.1s ease-in-out;
+}
+.projects-grid-container div a:hover {
+  color: #5a5a5a;
+  -webkit-text-decoration: underline 1px #5a5a5a;
+          text-decoration: underline 1px #5a5a5a;
+}

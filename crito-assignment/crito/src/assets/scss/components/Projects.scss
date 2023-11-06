@@ -1,0 +1,38 @@
+//Projects sektion
+.projects-section{
+    .projects-section-container{
+        max-width: 1380px;
+        padding: 60px 40px;
+
+        margin: auto;
+
+        h6{
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        //Grid sektion för projects
+        .projects-grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, 645px);
+            gap: 10px;
+            justify-content: center;
+
+            margin-top: 60px;
+
+            @media (max-width: 768px){
+                grid-template-columns: repeat(auto-fit, 340px);
+            }
+        }
+
+        .projects-button{
+            margin: auto;
+            margin-top: 10px;
+
+            width: 250px;
+        }
+    }
+}
