@@ -1,0 +1,71 @@
+.news-grid-container{
+    text-decoration: none;
+
+    margin-bottom: 45px;
+
+    position:relative;
+
+    outline: 5px solid transparent;
+
+    transition: background-color 0.15s ease-in-out, outline 0.15s ease-in-out;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.04);
+
+        outline: 5px solid rgba(0, 0, 0, 0.04);
+    }
+
+    //Låda i hörnet med datum
+    .date{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        background-color: #F9D783;
+
+        width: 56px;
+        height: 64px;
+
+        display: grid;
+        align-items: center;
+
+        h4{
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+
+            text-align: center;
+
+            margin: 0 auto;
+        }
+
+        span{
+            font-size: 16px;
+            font-weight: 400;
+
+            display: block;
+
+            margin-top: -3px;
+        }
+    }
+
+    img{
+        margin-bottom: 18px;
+
+        width: 100%;
+
+        // @media (max-width: 768px){
+        //     width: 340px;
+        // }
+    }
+    p{
+        margin: 0 10px 10px 10px;
+    }
+    h4{
+        width: 60%;
+
+        margin: 13px 10px 10px 10px;
+
+        color: black;
+    }
+}

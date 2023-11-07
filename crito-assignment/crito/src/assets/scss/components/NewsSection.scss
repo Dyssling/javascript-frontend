@@ -1,0 +1,50 @@
+//News sektion
+.news-section{
+    .news-section-container{
+        max-width: 1380px;
+        padding: 60px 40px;
+
+        margin: auto;
+
+        .news-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            margin-bottom: 40px;
+
+            @media (max-width: 768px){
+                display: block;
+            }
+
+            .news-header-container{
+                h2{
+                    margin-bottom: 0;
+                }
+            }
+
+            .news-button{
+                margin-left: 25px;
+
+                min-width: 180px;
+
+                @media (max-width: 768px){
+                    margin: auto;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        //Grid sektion för news
+        .news-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            justify-content: space-evenly;
+            gap: 20px;
+
+            @media (max-width: 768px){
+                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            }
+        }
+    }
+}
