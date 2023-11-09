@@ -68,12 +68,12 @@ const ContactForm = () => {
                     <input type="text" name="name" title="Name" placeholder="Name*" value={formik.values.name} onChange={formik.handleChange} />
                     <input type="email" name="email" title="Email" placeholder="Email*" value={formik.values.email} onChange={formik.handleChange} />
                     <textarea name="message" title="Your message" placeholder="Your Message*" value={formik.values.message} onChange={formik.handleChange} />
-                    {errorMessage ? (
+                    {errorMessage ? ( //Conditional rendering. Om det finns ett error meddelande så renderas det ut, annars renderas bara null, alltså ingenting
                             <div className="error-message">
                                 <i className="fa-solid fa-triangle-exclamation"></i> {errorMessage}
                             </div>
                     ) : (null)}
-                    {successMessage ? (
+                    {successMessage ? ( //Samma sak här, fast med success meddelandet
                             <div className="error-message success-message">
                                 <i className="fa-sharp fa-solid fa-check"></i> {successMessage}
                             </div>
