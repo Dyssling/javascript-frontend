@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <section className="sidebar">
         <div className="searchbar">
-            <input type="text" title="Search" placeholder="Type to search..." />
+            <input type="text" name="search" title="Search" placeholder="Type to search..." />
             <button><i className="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div className="recent-posts">

@@ -1,0 +1,17 @@
+.not-found-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #F0EFE9;
+  text-align: center;
+}
+.not-found-section h1 span {
+  display: block;
+}
+.not-found-section h1 span:first-child {
+  font-size: 55px;
+}
+.not-found-section h1 span:last-child {
+  margin-bottom: 15px;
+}

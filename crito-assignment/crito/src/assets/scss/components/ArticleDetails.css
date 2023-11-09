@@ -50,3 +50,11 @@
   height: 9px;
   border-radius: 50%;
 }
+.article-details-section .article-not-found {
+  text-align: center;
+}
+.article-details-section .article-not-found .not-found-button {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+}

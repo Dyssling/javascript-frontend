@@ -64,4 +64,15 @@
             }
         }
     }
+
+    .article-not-found{
+        text-align: center;
+
+        .not-found-button{
+            width: 75%;
+
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
 }
