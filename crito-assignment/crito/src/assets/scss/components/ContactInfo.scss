@@ -1,0 +1,68 @@
+//Info sektion
+.info{
+    //Grid sektion för info
+    .info-grid{
+        max-width: 1380px;
+        padding: 0 40px;
+
+        margin: auto;
+
+        display: flex; //Ja varför inte testa lite flex wrapping
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .info-grid-container{
+            display: flex;
+            justify-content: center;
+
+            border: 1px solid #cacaca;
+
+            margin: 0 12px;
+            margin-bottom: 24px;
+
+            padding: 40px 0;
+
+            max-width: 700px;
+            min-width: 400px;
+
+            flex-grow: 1; //Blir tydligen samma effekt som när man sätter 1fr på ett grid objekt
+
+            @media (max-width: 768px){
+                max-width: 500px;
+                min-width: 330px;
+            }
+
+            i{
+                font-size: 18px;
+                color: white;
+
+                background-color: black;
+
+                width: 58px;
+                height: 58px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 50%;
+
+                margin: 0 5% 0 0;
+            }
+
+            .info-container{
+                margin-right: 12%;
+
+                h4{
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    margin: 0;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}

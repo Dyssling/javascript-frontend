@@ -1,7 +1,9 @@
 .login-button {
   padding: 13px 30px;
+  border: none;
   border-radius: 30px;
   margin-right: 9px;
+  font-size: 16px;
   text-decoration: none;
   color: black;
   display: flex;
@@ -9,6 +11,7 @@
   align-items: center;
   background-color: #F9D783;
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  cursor: pointer;
 }
 .login-button i {
   margin-left: 13px;

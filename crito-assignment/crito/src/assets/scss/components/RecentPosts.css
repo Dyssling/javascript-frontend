@@ -1,0 +1,22 @@
+.recent-post-container {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+  text-decoration: none;
+}
+.recent-post-container:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: -15px 0px 0px 0px rgba(0, 0, 0, 0.04), 15px 0px 0px 0px rgba(0, 0, 0, 0.04);
+}
+.recent-post-container .recent-post-title {
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  margin-top: 12px;
+}
+.recent-post-container .recent-post-date {
+  font-size: 12px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 10px;
+}

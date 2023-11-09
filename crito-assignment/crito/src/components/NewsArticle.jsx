@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/scss/components/NewsArticle.css'
 
 const NewsArticle = ({url, day, month, imageSource, category, title, text}) => {
   return (
-    <a className="news-grid-container" href={url}>
+    <Link className="news-grid-container" to={url}>
         <div className="date">
             <h4>{day} <span>{month}</span></h4>
         </div>
@@ -17,7 +18,7 @@ const NewsArticle = ({url, day, month, imageSource, category, title, text}) => {
         <p>
             {text}
         </p>
-    </a>
+    </Link>
   )
 }
 

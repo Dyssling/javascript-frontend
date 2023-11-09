@@ -1,14 +1,12 @@
 import React, {useContext} from 'react'
-import { ArticlesContext } from '../contexts/ArticlesContext'
 import '../assets/scss/components/NewsSection.css'
 import Button from './Button'
-import NewsArticle from './NewsArticle'
+import NewsGrid from './NewsGrid'
 
-const NewsSection = () => {
-    const {articleData} = useContext(ArticlesContext);
+const NewsSection = ({className}) => {
   return (
     // <!-- News sektion -->
-        <section className="news-section">
+        <section className={`news-section${className ? (" " + className) : ("")}`}>
             <div className="news-section-container">
                 <div className="news-header">
                     <div className="news-header-container">
@@ -19,14 +17,10 @@ const NewsSection = () => {
                             Get Every Single Article & News
                         </h2>
                     </div>
-                    <Button className="news-button" type="transparent" text="Browse Articles" url="#" />
+                    <Button className="news-button" type="transparent" text="Browse Articles" url="/news" />
                 </div>
                 {/* <!-- Grid sektion för news --> */}
-                <div className="news-grid">
-                    {(articleData.slice(0, 3)).map(data => ( //Jag gör en slice för att den inte ska mappa mer än 3 artiklar
-                        <NewsArticle key={data.id} url="#" day={data.day} month={data.month} imageSource={data.imageUrl} category={data.category} title={data.title} text={data.content} />
-                    ))}
-                </div>
+                <NewsGrid sliceValue={3} />
                 {/* <!-- Såna där prickar igen --> */}
                 <div className="dot-container">
                     <button className="here"></button>

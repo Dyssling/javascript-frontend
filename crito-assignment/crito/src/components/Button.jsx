@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/scss/components/Button.css'
 
 const Button = ({type, text, url, className}) => {
@@ -18,7 +19,7 @@ const Button = ({type, text, url, className}) => {
   }, [])
     
   return (
-    <a className={`${typeClass}${className ? (" " + className) : ("")}`} href={url}>{text} <i className="fa-solid fa-arrow-up-right"></i></a> //Lite conditional rendering här, så att en "undefined" klass inte ska läggas till när man inte specificerar className
+    <Link className={`${typeClass}${className ? (" " + className) : ("")}`} to={url}>{text} <i className="fa-solid fa-arrow-up-right"></i></Link> //Lite conditional rendering här, så att en "undefined" klass inte ska läggas till när man inte specificerar className
   )
 }
 

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import Image from '../assets/images/Logo.svg'
 import Button from './Button'
 import '../assets/scss/components/Header.css'
 
 const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
   return (
     <header>
         <div className="header-container">
@@ -42,7 +43,7 @@ const Header = () => {
                     </div>
                 </div>
                 {/* <!-- Navigering --> */}
-                <div id="nav" className="nav">
+                <div className="nav"> {/* När skärmen är större än 768px syns denna nav, vilket bestäms av CSS filen med hjälp av media query */}
                     <nav>
                         <NavLink to="/">Home</NavLink>
                         <a href="#">Service</a>
@@ -51,8 +52,20 @@ const Header = () => {
                     </nav>
                     <Button className="nav-button" type="yellow" text="Login" url="#"/>
                 </div>
+                {/* <!-- MOBIL Navigering --> */}
+                {showMenu ? (
+                                <div className="nav nav-mobile"> {/* När skärmen är större än 768px får denna nav display:none. Så även om showMenu == true så kommer elementet vara dolt på större skärmstorlekar tills man minskar storleken igen.*/}
+                                    <nav>
+                                        <NavLink to="/" onClick={() => {setShowMenu(!showMenu)}}>Home</NavLink> {/*När man klickar på en länk så döljs menyn igen */}
+                                        <a href="#" onClick={() => {setShowMenu(!showMenu)}}>Service</a>
+                                        <NavLink to="/news" onClick={() => {setShowMenu(!showMenu)}}>News</NavLink>
+                                        <NavLink to="/contact" onClick={() => {setShowMenu(!showMenu)}}>Contact</NavLink>
+                                    </nav>
+                                    <Button className="nav-button" type="yellow" text="Login" url="#"/>
+                                </div>
+                            ) : (null)}
                 {/* <!-- Mobil meny knapp --> */}
-                <button className="menu">
+                <button onClick={() => {setShowMenu(!showMenu)}} className="menu">
                     <i className="fa-solid fa-bars"></i>
                 </button>
             </div>

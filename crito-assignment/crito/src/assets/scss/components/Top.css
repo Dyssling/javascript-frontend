@@ -1,0 +1,34 @@
+.top {
+  padding: 70px 40px;
+  background-color: #F0EFE9;
+  position: relative;
+  margin-bottom: 110px;
+}
+.top .breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .breadcrumb a {
+  display: block;
+  -webkit-text-decoration: underline 1px solid transparent;
+          text-decoration: underline 1px solid transparent;
+  color: black;
+  margin: 0 10px;
+  transition: -webkit-text-decoration 0.15s ease-in-out;
+  transition: text-decoration 0.15s ease-in-out;
+  transition: text-decoration 0.15s ease-in-out, -webkit-text-decoration 0.15s ease-in-out;
+}
+.top .breadcrumb a:hover {
+  -webkit-text-decoration: underline 1px solid black;
+          text-decoration: underline 1px solid black;
+}
+.top .breadcrumb a:first-child {
+  font-weight: 100;
+}
+.top h1 {
+  font-size: 56px;
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+}

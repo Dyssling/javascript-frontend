@@ -1,0 +1,96 @@
+.sidebar{
+    margin-left: 100px;
+
+    width: 420px;
+
+    @media(max-width: 1400px){
+        margin-left: 0;
+        margin-top: 65px;
+    }
+
+    @media(max-width: 576px){
+        width: 100%;
+    }
+
+    .searchbar{
+        position: relative;
+
+        input{
+            width: 100%;
+
+            background-color: #1919190e;
+
+            border: none;
+            border-radius: 30px;
+
+            font-size: 16px;
+
+            padding: 15px 25px 15px 60px;
+
+            &:focus{
+                outline: none;
+            }    
+        }
+        button{
+            position: absolute;
+            top: 4px;
+            left: 14px;
+
+            height: 40px;
+            width: 40px;
+
+            font-size: 20px;
+
+            border: none;
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.041);
+            }
+        }
+    }
+
+    .recent-posts{
+        margin-top: 35px;
+
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        padding: 30px 40px;
+
+        h4{
+            margin: 0;
+            margin-bottom: 20px;
+
+            &::after{
+                content: "";
+                display: block;
+
+                width: 10%;
+                height: 2px;
+
+                background-color: black;
+            }
+        }
+    }
+
+    .categories{
+        a{
+            display: block;
+
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+
+            margin: 10px 0;
+
+            &:hover{
+                color: rgb(133, 132, 132);
+            }
+
+            span{
+                color: rgb(133, 132, 132);
+            }
+        }
+    }
+}

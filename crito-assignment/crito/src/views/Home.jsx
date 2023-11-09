@@ -9,6 +9,7 @@ import Projects from '../components/Projects';
 import Team from '../components/Team';
 import Testimonial from '../components/Testimonial';
 import NewsSection from '../components/NewsSection';
+import Signup from '../components/Signup';
 
 function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function Home() {
       <Team />
       <Testimonial />
       <NewsSection />
+      <Signup />
     </>
   )
 }

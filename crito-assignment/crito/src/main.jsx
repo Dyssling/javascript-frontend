@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Routes>
                   <Route path="/" element={<Home />}/>
                   <Route path="/news" element={<News />} />
-                  <Route path="/news-details" element={<NewsDetails />} />
+                  <Route path="/news-details/:id" element={<NewsDetails />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
               </ArticlesContextProvider>

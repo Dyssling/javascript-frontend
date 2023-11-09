@@ -34,17 +34,5 @@
                 }
             }
         }
-
-        //Grid sektion för news
-        .news-grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-            justify-content: space-evenly;
-            gap: 20px;
-
-            @media (max-width: 768px){
-                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            }
-        }
     }
 }

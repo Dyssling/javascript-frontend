@@ -1,0 +1,94 @@
+//Signup
+.signup-section{
+    background-color: #F0EFE9;
+
+    margin-top: 20px;
+
+    position:relative;
+
+    img{
+        position: absolute;
+        bottom: 58px;
+        right: 0;
+
+        @media (max-width: 1500px){
+            width: 120px;
+
+            bottom: 40px;
+        }
+
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+
+    .signup-section-container{
+        max-width: 1380px;
+        padding: 100px 40px;
+
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+        gap: 20px;
+
+        @media (max-width: 768px){
+            display:block;
+
+            padding: 60px 20px;
+        }
+
+        h2{
+            margin: 0 0 5px 0;
+            text-align: center;
+        }
+
+        //Formulär som inte gör så mycket, men ser bra ut
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 768px){
+                display: block;
+
+                margin-top: 30px;
+            }
+
+            input{
+                width: 300px;
+                height: 48px;
+
+                font-size: 16px;
+
+                border-radius: 30px;
+                border: none;
+
+                padding: 0 30px;
+
+                margin-right: 15px;
+
+                &::placeholder{
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:focus{
+                    outline: 1px solid black;
+                }
+
+                @media (max-width: 768px){
+                    margin: auto;
+                    margin-bottom: 30px;
+                    display: block;
+                }
+            }
+            .signup-button{
+                width: 150px;
+
+                @media (max-width: 768px){
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

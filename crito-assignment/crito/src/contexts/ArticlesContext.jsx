@@ -9,7 +9,7 @@ export const ArticlesContext = createContext(); //Här skapar jag ett context so
 export const ArticlesContextProvider = ({children}) => { //Men först måste jag såklart skapa variablarna och liknande, och även definiera och köra funktionerna, så att variablarna/objekten får de värden som jag vill ha. 
     const [articleData, setArticleData] = useState([]);
 
-    const getArticles = async (articles, month, day) => {
+    const getArticles = async (articles, month, day, year) => {
         articles = await fetch("https://win23-assignment.azurewebsites.net/api/articles");
         articles = await articles.json();
         
@@ -18,9 +18,11 @@ export const ArticlesContextProvider = ({children}) => { //Men först måste jag
 
             month = months[parseInt((data.published.substring(5, 7))) - 1];
             day = data.published.substring(8, 10);
+            year = data.published.substring(0, 4);
 
             data.month = month;
             data.day = day;
+            data.year = year;
         })
 
         setArticleData(articles);

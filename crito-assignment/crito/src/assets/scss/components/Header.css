@@ -120,6 +120,7 @@ header .header-container .header .contact .location-social .social .social-icons
 }
 header .header-container .header .nav {
   width: 100%;
+  display: flex;
   justify-content: space-between;
   position: absolute;
   bottom: 0;
@@ -130,19 +131,9 @@ header .header-container .header .nav {
     margin-top: 18px;
   }
 }
-@media (min-width: 769px) {
-  header .header-container .header .nav {
-    display: flex !important;
-  }
-}
 @media (max-width: 768px) {
   header .header-container .header .nav {
     display: none;
-    background-color: rgba(240, 239, 233, 0.9647058824);
-    z-index: 999;
-    top: 120px;
-    left: 0;
-    height: 410px;
   }
 }
 header .header-container .header .nav nav {
@@ -217,6 +208,25 @@ header .header-container .header .nav nav .active::after {
   header .header-container .header .nav nav .active::after {
     display: none;
   }
+}
+header .header-container .header .nav-mobile {
+  display: block;
+  background-color: rgba(240, 239, 233, 0.9647058824);
+  z-index: 999;
+  top: 120px;
+  left: 0;
+  height: 410px;
+}
+@media (min-width: 769px) {
+  header .header-container .header .nav-mobile {
+    display: none;
+  }
+}
+header .header-container .header .nav-mobile .nav-button {
+  width: 80%;
+}
+header .header-container .header .nav-mobile nav .active {
+  background-color: rgba(0, 0, 0, 0.068);
 }
 header .header-container .header .menu {
   border: none;

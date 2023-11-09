@@ -1,0 +1,44 @@
+//Övre sektionen av sidan under headern
+.top{
+    padding: 70px 40px;
+    background-color: #F0EFE9;
+
+    position: relative;
+
+    margin-bottom: 110px;
+
+    .breadcrumb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            display: block;
+
+            text-decoration: underline 1px solid transparent;
+
+            color: black;
+
+            margin: 0 10px;
+
+            transition: text-decoration 0.15s ease-in-out;
+
+            &:hover{
+                text-decoration: underline 1px solid black;
+            }
+
+            &:first-child{
+                font-weight: 100;
+            }
+        }
+
+        
+    }
+
+    h1{
+        font-size: 56px;
+        text-align: center;
+
+        margin: 0;
+        margin-top: 8px;
+    }
+}

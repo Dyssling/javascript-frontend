@@ -1,0 +1,19 @@
+.article-and-sidebar{
+    max-width: 1380px;
+    padding: 0 40px;
+
+    margin: auto;
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 1400px){
+        flex-direction: column;
+    }
+}
+
+.darker-background{
+    background-color: #F0EFE9;
+}
